@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema({
   profile: { type: String },
   role: {
     type: String,
-    enum: ["customer", "individual", "company"], // Define roles here
+    enum: ["customer", "individual", "company", "admin"], // Define roles here
     default: "customer",
   },
   location: {
